@@ -28,7 +28,7 @@ class BreitWigner:
       return (par[1]/((x[0]-par[0])**2. + (par[1]**2.)/4))/(2*math.pi)
 
 fit = TF1( 'lin', BreitWigner(), -1., 1., 2 )
-fit.SetParameter(0,1.05)
+fit.SetParameter(0,1.05) 
 fit.SetParameter(1,0.01)
 
 """
